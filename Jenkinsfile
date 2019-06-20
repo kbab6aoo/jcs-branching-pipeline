@@ -8,12 +8,12 @@ node
     {
     echo 'branch name ' + env.BRANCH_NAME
     
-    if (env.BRANCH_NAME.startsWith("Feature_"))
+    if (env.BRANCH_NAME.startsWith("Feature-"))
       {
       echo "Deploying to Dev environment after build"
       }
       
-    else if (env.BRANCH_NAME.startsWith("Release_"))
+    else if (env.BRANCH_NAME.startsWith("Release-"))
       {
       echo "Deploying to Stage after build and Dev Deployment"
       }
